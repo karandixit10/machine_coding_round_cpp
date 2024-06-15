@@ -7,16 +7,16 @@
 class Post {
 public:
 
-                Post        (const std::string& author, const std::string& content);
-
-    void                        addComment (Post* comment);
-    void                        upVotes();
-    void                        downVotes();
-    int                         getScore() const;
-    const std::string&          getAuthor() const;
-    const std::string&          getContent() const;
-    const std::vector<Post*>&   getComments() const;
-    time_t                      getTimestamp() const;
+                                Post            (const std::string& author, const std::string& content);
+    
+    void                        addComment      (Post* comment);
+    void                        upVotes         ();
+    void                        downVotes       ();
+    int                         getScore        () const;
+    const std::string&          getAuthor       () const;
+    const std::string&          getContent      () const;
+    const std::vector<Post*>&   getComments     () const;
+    time_t                      getTimestamp    () const;
 
 
 
